@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sopa de letras</title>
+        <link href="hojastilo.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="fondo">
+        <div class="cajaderecha">
+            <h3>Palabras encontradas</h3>
+            <input type="text" id="texto">
+            <button id="boton">La encontré</button>
+            <ul id="lista"></ul>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+        
+            var tx = document.getElementById("texto");
+            var bt = document.getElementById("boton");
+            var ul = document.getElementById("lista");
+        
+            bt.addEventListener("click", function (params) {
+                let elemento = document.createElement("li");
+                elemento.innerHTML = tx.value;
+                ul.appendChild(elemento);
+                tx.value = "";
+            });
+        
+        </script>
+        </div>
+
+        <div, class="cajaizquierda">
+
+            <table class="tablon">
+                <tr>
+                    <td>w</td>
+                    <td>p</td>
+                    <td>a</td>
+                    <td>g</td>
+                    <td>i</td>
+                    <td>n</td>
+                    <td>a</td>
+                    <td>q</td>
+                    <td>r</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>c</td>
+                    <td>a</td>
+                    <td>c</td>
+                    
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td>o</td>
+                    <td>d</td>
+                    <td>i</td>
+                    <td>g</td>
+                    <td>o</td>
+                    <td>a</td>
+                    <td>q</td>
+                    <td>e</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>o</td>
+                    <td>u</td>
+                    <td>o</td>
+                </tr>
+                <tr>
+                    <td>w</td>
+                    <td>e</td>
+                    <td>b</td>
+                    <td>t</td>
+                    <td>m</td>
+                    <td>l</td>
+                    <td>a</td>
+                    <td>q</td>
+                    <td>p</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>n</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td>o</td>
+                    <td>c</td>
+                    <td>u</td>
+                    <td>m</td>
+                    <td>e</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>o</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>t</td>
+                    <td>o</td>
+                    <td>t</td>
+                </tr>
+                <tr>
+                    <td>h</td>
+                    <td>e</td>
+                    <td>a</td>
+                    <td>d</td>
+                    <td>t</td>
+                    <td>i</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>l</td>
+                    <td>o</td>
+                    <td>t</td>
+                    <td>e</td>
+                    <td>i</td>
+                    <td>e</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>u</td>
+                    <td>e</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>e</td>
+                    <td>i</td>
+                    <td>i</td>
+                    <td>i</td>
+                    <td>n</td>
+                    <td>e</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>n</td>
+                </tr>
+                <tr>
+                    <td>o</td>
+                    <td>t</td>
+                    <td>t</td>
+                    <td>a</td>
+                    <td>q</td>
+                    <td>a</td>
+                    <td>a</td>
+                    <td>t</td>
+                    <td>t</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>e</td>
+                    <td>n</td>
+                    <td>e</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td>u</td>
+                    <td>s</td>
+                    <td>u</td>
+                    <td>a</td>
+                    <td>r</td>
+                    <td>i</td>
+                    <td>o</td>
+                    <td>s</td>
+                    <td>n</td>
+                    <td>i</td>
+                    <td>l</td>
+                    <td>e</td>
+                    <td>d</td>
+                </tr>
+                <tr>
+                    <td>i</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>e</td>
+                    <td>r</td>
+                    <td>f</td>
+                    <td>a</td>
+                    <td>z</td>
+                    <td>l</td>
+                    <td>a</td>
+                    <td>c</td>
+                    <td>o</td>
+                    <td>g</td>
+                    <td>o</td>
+                </tr>
+                <tr>
+                    <td>e</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>r</td>
+                    <td>u</td>
+                    <td>c</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>r</td>
+                    <td>a</td>
+                    <td>u</td>
+                    <td>g</td>
+                    <td>r</td>
+                    <td>r</td>
+                </tr>
+                <tr>
+                    <td>t</td>
+                    <td>e</td>
+                    <td>n</td>
+                    <td>r</td>
+                    <td>e</td>
+                    <td>t</td>
+                    <td>n</td>
+                    <td>i</td>
+                    <td>o</td>
+                    <td>n</td>
+                    <td>e</td>
+                    <td>i</td>
+                    <td>p</td>
+                    <td>e</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td>o</td>
+                    <td>s</td>
+                    <td>c</td>
+                    <td>r</td>
+                    <td>i</td>
+                    <td>p</td>
+                    <td>t</td>
+                    <td>o</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>c</td>
+                    <td>l</td>
+                    <td>s</td>
+                </tr>
+                <tr>
+                    <td>h</td>
+                    <td>t</td>
+                    <td>m</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>e</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>o</td>
+                    <td>n</td>
+                    <td>a</td>
+                    <td>a</td>
+                    <td>i</td>
+                    <td>c</td>
+                </tr>
+        </table>
+    </div>
+        
+    </body>
+</html>
